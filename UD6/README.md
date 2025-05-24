@@ -165,8 +165,14 @@ Además nos invita a usar etiquetas para remarcar algunos aspectos concretos de 
 
 ## Actividad 6.2. SonarLint
 
-## Instalación del Plugin SonarLint
+### Instalación del Plugin SonarLint
 
 ![img_3.png](img_3.png)
 
-**_Al final no he podido terminar la actividad porque me daba problemas con la instalación._**
+
+### Como podemos ver en la imagen, **SonarLint permite analizar bugs y code smells, detectar vulnerabilidades y organizar los resultados en diferentes opciones (_Current File, Security Hotspots, etc..._)**
+
+![img_8.png](img_8.png)
+
+### En esta imagen también podemos ver la funcionalidad del SonarLint.
+![img_9.png](img_9.png)

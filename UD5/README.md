@@ -1,16 +1,18 @@
 # UT 5: Diseño y realización de pruebas
 
 ## 1. Introducción
+
 ### ¿Qué es una prueba en desarrollo?
+
 Es una ejecución controlada de nuestro software que se lleva a cabo en unas condiciones concretas.
 
 Una prueba debe tener dos objetivos:
 
 * Comprobar si el software no hace lo que debe hacer.
-
 * Comprobar si el software hace algo que no debe hacer.
 
 ### ¿Son importantes las pruebas?
+
 El modelo de desarrollo en cascada, descrito formalmente en 1970 por Winston W. Royce fue propuesto como el mejor modelo de desarrollo. Define 5 fases:
 
 1. Requisitos.
@@ -30,8 +32,6 @@ También sirven para poder refactorizar el código sin introducir nuevos errores
 Hay 2 tipos:
 
 * **Pruebas dinámicas:** Requieren la ejecución de la aplicación para poder medir el comportamiento de la aplicación desarrollada.
-
-
 * **Pruebas estáticas:** Se realizan sin ejecutar el código de la aplicación, examinando el código.
 
 ### 2.2. Estrategias de prueba
@@ -39,8 +39,6 @@ Hay 2 tipos:
 Hay 2 estrategias principales:
 
 * **Caja negra:** Se estudia el sistema desde fuera, comprobando las funcionalidades que ofrece.
-
-
 * **Caja blanca:** Se examina el cómo funciona el código por dentro. Son pruebas estructurales.
 
 ![img_2.png](img_2.png)
@@ -53,7 +51,6 @@ Hay 2 estrategias principales:
 #### Estrategias de prueba de caja blanca
 
 * **Cobertura de código:** se escriben pruebas para probar todas las sentencias de un programa, todas las decisiones, las condiciones...
-
 * **Prueba de bucles:** consiste en escribir casos de prueba para los bucles del código.
 
 ### 2.3. Tipos de pruebas
@@ -74,8 +71,6 @@ Pruebas de usabilidad, Pruebas de rendimiento, Pruebas de stress, Pruebas de seg
 ### 2.4. Mecanismos de prueba
 
 * **Manual:** las pruebas son llevadas a cabo por una persona.
-
-
 * **Automático:** se hace uso de un software que ejecuta código de forma automatizada.
 
 ## 3. Debug
@@ -106,7 +101,7 @@ Ejemplos de frameworks de tests son:
 
 Para realizar la automatización de pruebas necesitamos implementar casos de prueba usando el framework de tests.
 
-![img_4.png](img_4.png) 
+![img_4.png](img_4.png)
 
 ![img_5.png](img_5.png)
 
@@ -114,10 +109,9 @@ Para realizar la automatización de pruebas necesitamos implementar casos de pru
 
 ### Generar documentación
 
-El IDE nos proporciona, al ejecutar los tests, la información de si estos se han llevado a cabo con éxito o no. 
+El IDE nos proporciona, al ejecutar los tests, la información de si estos se han llevado a cabo con éxito o no.
 
 Pero también podemos generar documentación en HTML o XML para compartir con otra persona.
-
 
 ### Cobertura del código
 
@@ -127,7 +121,7 @@ Es una medida que indica qué porcentaje de código está cubierto por algún te
 
 #### ¿Qué es TDD?
 
-Es una metodología de desarrollo que pone a las pruebas en el centro del desarrollo de software, proponiendo que primero se diseñen estas y luego se programe, 
+Es una metodología de desarrollo que pone a las pruebas en el centro del desarrollo de software, proponiendo que primero se diseñen estas y luego se programe,
 no con el fin de desarrollar una funcionalidad concreta, sino con el de conseguir que el software pase el test.
 
 #### Tests limpios (Clean tests)
@@ -135,18 +129,14 @@ no con el fin de desarrollar una funcionalidad concreta, sino con el de consegui
 Son tests que siguen una serie de buenas prácticas:
 
 * **Usar un nombre descriptivo** para cada test.
-
-
 * Se estructuran según el **patrón Arrange-Act-Assert (AAA)**:
-
-
 * **Comprueba un solo comportamiento.**
-Sigue los principios **F.I.R.S.T.**:
+  Sigue los principios **F.I.R.S.T.**:
 
-  * **Fast:** un test debe ser rápido. 
-  * **Independent:** un test debe ser independiente respecto de otros tests o servicios externos. 
-  * **Repeteable:** un test debe poderse repetible en cualquier entorno, usando datos propios y sin depender de factores externos. 
-  * **Self-validating:** cada test debe comprobar por sí solo si falla o se ejecuta correctamente. 
+  * **Fast:** un test debe ser rápido.
+  * **Independent:** un test debe ser independiente respecto de otros tests o servicios externos.
+  * **Repeteable:** un test debe poderse repetible en cualquier entorno, usando datos propios y sin depender de factores externos.
+  * **Self-validating:** cada test debe comprobar por sí solo si falla o se ejecuta correctamente.
   * **Thorough:** el test debe ser exhaustivo.
 
 ## 5. CI / CD
@@ -180,3 +170,19 @@ Hay 3 categorías:
 2. Revisión del producto
 3. Transición del producto
 
+
+## Actividad 5.1. Debug
+
+#### Para utilizar el Debug en Intellij tendremos que marcar un punto del cual vamos a partir para empezar a revisar el código.
+#### Eso se hace como se ve en la imagen. El punto del cual vamos a partir está marcado como un punto rojo 
+#### y si queremos utilizar el debug le daremos arriba a la derecha al símbolo del "Bicho".
+
+![img_7.png](img_7.png)
+
+
+#### Una vez le hemos dado al símbolo del bicho, nos aparecerá el menú del Debug.
+#### El cuál ya nos permitirá realizar diferentes opciones para ir comprobando tanto la funcionalidad, los errores, etc... del código.
+#### Yo personalmente he utilizado bastante esta opción para comprobar, por ejemplo, que el funcionamiento de mis metodos hagan lo que quiero.
+#### También para localizar el fallo que se produce, por ejemplo, en un bucle for, etc...
+
+![img_8.png](img_8.png)
